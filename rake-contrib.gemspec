@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "rake-contrib"
-  spec.version       = "1.0.1"
+  spec.version       = "2.0.0"
   spec.authors       = ["SHIBATA Hiroshi"]
   spec.email         = ["hsbt@ruby-lang.org"]
 
