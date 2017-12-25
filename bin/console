@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
-require "rake/contrib"
+require "rake/contrib/compositepublisher"
+require "rake/contrib/ftptools"
+require "rake/contrib/sshpublisher"
 
 require "irb"
 IRB.start
