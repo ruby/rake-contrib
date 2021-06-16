@@ -1,6 +1,8 @@
 # Rake::Contrib
 
-Additional libraries for Rake
+Additional libraries for Rake.
+
+This gem was extracted from Rake when v11.0 was released.
 
 ## Installation
 
@@ -17,6 +19,35 @@ And then execute:
 Or install it yourself as:
 
     $ gem install rake-contrib
+
+## Usage
+
+See also [rake-contrib API documentation at RubyDoc.info][rake-contrib-api]
+for full details.
+
+[rake-contrib-api]: http://www.rubydoc.info/gems/rake-contrib/
+
+### SshPublisher
+
+This gem comes with a simple SSH publishing class, to copy files to a remote
+host.
+
+In your Rakefile:
+
+```ruby
+require 'rake/contrib/sshpublisher'
+```
+
+This gives your Rake tasks access to these utility classes around the Unix
+`scp` command:
+
+- `SshDirPublisher` - A publisher to `scp` all files in local directory to
+  given remote directory on SSH host.
+- `SshFilePublisher` - A publisher to `scp` given files in local directory
+  to given remote directory on SSH host.
+- `SshFreshDirPublisher` - Like `SshDirPublisher`, but removes and replaces
+  given directory.
+- `CompositePublisher` - Manage several publishers as a single entity.
 
 ## Development
 
