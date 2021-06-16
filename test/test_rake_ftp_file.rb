@@ -1,7 +1,7 @@
 require File.expand_path('../helper', __FILE__)
 require 'date'
 require 'time'
-require 'rake/contrib/ftptools'
+require 'rake-contrib/ftptools'
 
 class FakeDate
   def self.today
